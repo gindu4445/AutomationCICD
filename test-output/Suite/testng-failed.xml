@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="rshettyacademy.TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Submit Order Test(failed)">
+    <classes>
+      <class name="rshettyacademy.tests.SubmitOrderTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="submitorder" invocation-numbers="0 1"/>
+          <include name="launchApplication"/>
+          <include name="OrderHistoryTest"/>
+        </methods>
+      </class> <!-- rshettyacademy.tests.SubmitOrderTest -->
+    </classes>
+  </test> <!-- Submit Order Test(failed) -->
+  <test thread-count="5" name="Errorr Validations Test(failed)">
+    <classes>
+      <class name="rshettyacademy.tests.ErrorValidationsTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="LoginErrorValidation"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- rshettyacademy.tests.ErrorValidationsTest -->
+    </classes>
+  </test> <!-- Errorr Validations Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
